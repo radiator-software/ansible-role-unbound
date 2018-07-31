@@ -65,8 +65,8 @@ unbound_control_interface: []
 
 ### Stub, forward zones and others ###
 
-unbound_stub_zones: []  # list of dicts
-unbound_forward_zones: []  # list of dicts
+unbound_stub_zones: []  # list of strings, as options can be multiples
+unbound_forward_zones: []  # list of strings, as options can be multiples
 unbound_views: []  # list of strings, as options can be multiples
 ```
 

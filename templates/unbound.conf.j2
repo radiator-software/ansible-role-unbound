@@ -408,13 +408,13 @@ remote-control:
 
 {% for stub_zone in unbound_stub_zones %}
 stub-zone:
-    {% for key, value in stub_zone.iteritems() %}{{ key }}: {{ value }}
+    {% for i in stub_zone %}{{ i }}
     {% endfor %}
 
 {% endfor %}
 {% for forward_zone in unbound_forward_zones %}
 forward-zone:
-    {% for key, value in forward_zone.iteritems() %}{{ key }}: {{ value }}
+    {% for i in forward_zone %}{{ i }}
     {% endfor %}
 
 {% endfor %}
