@@ -310,10 +310,10 @@ outgoing-interface: {{ interface }}
     local-zone: {{ zone_and_type }}
 {% endfor %}
 {% for data in unbound_local_datas %}
-    local-data: {{ data }}
+    local-data: "{{ data }}"
 {% endfor %}
 {% for ptr in unbound_local_data_ptrs %}
-    local-data-ptr: {{ ptr }}
+    local-data-ptr: "{{ ptr }}"
 {% endfor %}
 {% for zone_and_tags in unbound_local_zone_tags %}
     local-zone-tag: {{ zone_and_tags }}
